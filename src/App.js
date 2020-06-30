@@ -5,12 +5,9 @@ import { fetchGoals } from './actions/fetchGoals'
 
 class App extends Component {
 
+
   componentDidMount(){
-    fetch('http://localhost:3000/api/v1/goals/')
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-    })
+    this.props.fetchGoals()
   }
 
   render() {
@@ -22,6 +19,9 @@ class App extends Component {
   }
 };
 
+const mapDispatchToProps = (dispatch) => {
+  return {fetchGoals: () => dispatch(fetchGoals())}
+}
 
 
-export default connect(null, {fetchGoals})(App)
+export default connect(null, mapDispatchToProps)(App)
