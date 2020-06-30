@@ -10,6 +10,12 @@ export function addGoal(data){
         //must send it over as a string, hence we stringify
         body: JSON.stringify(data)
         })
+        .then(response => response.json())
+        .then(goal => dispatch({
+            type: "ADD_GOAL", 
+            goal
+        }))
+        .catch(alert)
         
 
     }

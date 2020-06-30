@@ -7,7 +7,11 @@ export default function manageGoal(state = {
         case 'FETCH_GOALS':
             //added goals to state
             return { 
-                goals: action.goals, 
+                ...state, goals: action.goals, 
+            }
+        case 'ADD_GOAL':
+            return {
+                ...state, goals:[...state.goals, action.goal]
             }
 
         default: 
