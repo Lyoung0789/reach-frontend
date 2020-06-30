@@ -5,11 +5,9 @@ export default function manageGoal(state = {
 
     switch(action.type){
         case 'FETCH_GOALS':
-            
             return {
                 ...state,
-                goals: [...state.goals],
-                todos: [...state.todos]
+                goals: [...state.goals]
             }
 
         case 'ADD_GOALS':

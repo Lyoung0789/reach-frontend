@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchGoals } from './actions/fetchGoals'
+import GoalsContainer from './containers/GoalsContainer'
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         App
+        <GoalsContainer />
       </div>
     );
   }
