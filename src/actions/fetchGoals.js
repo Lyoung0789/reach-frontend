@@ -1,7 +1,7 @@
 
 
 export function fetchGoals(){
-    //using thunk to return a function
+    //using thunk to return a function. Thunk allows us to use dispatch in an action creator
     return (dispatch) => {
         // debugger
         dispatch({type: "FETCH_GOALS"})
