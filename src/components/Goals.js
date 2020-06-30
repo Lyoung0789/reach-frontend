@@ -8,7 +8,7 @@ const Goals = (props) =>{
         
         <div>
             Goals
-             {props.goals.map((goal)=> <Goal goal ={goal} key={goal.id} />)}
+             {props.goals.map((goal)=> <Goal goal ={goal} key={goal.id} />)}<br></br>
         </div>
     )
 
