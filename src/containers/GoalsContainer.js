@@ -15,7 +15,7 @@ class GoalsContainer extends Component{
         // debugger
         return (
             <div>Goals Container
-                <Goals goals={this.props.goals}/>
+                <Goals goals={this.props.goals} />
             </div>
         )
     }

@@ -1,12 +1,14 @@
 import React from 'react'
+import Goal from './Goal'
 
 const Goals = (props) =>{
 
-    debugger
+    // debugger
     return(
         
         <div>
-            Goal
+            Goals
+             {props.goals.map((goal)=> <Goal goal ={goal} />)}
         </div>
     )
 
