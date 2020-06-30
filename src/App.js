@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import { fetchGoals } from './actions/fetchGoals'
 
 
 class App extends Component {
@@ -20,4 +22,6 @@ class App extends Component {
   }
 };
 
-export default App
+
+
+export default connect(null, {fetchGoals})(App)
