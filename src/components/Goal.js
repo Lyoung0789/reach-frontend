@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { Card } from 'react-bootstrap';
 
-const Goal = (props) =>{
 
-    debugger
-    return(
-        
-        <div>
-             {props.goal.title} - {props.goal.description}
-             {props.goal.completed}
-             
-            
-        </div>
-    )
-
+export default class Goal extends Component {
+	render() {
+		return (
+			<Card style={{ width: '18rem' }}>
+				<Card.Img variant="top" src="https://picsum.photos/100/100" />
+				<Card.Body>
+                <Card.Title>{this.props.goal.title}</Card.Title>
+					<Card.Text>
+						{this.props.goal.description}
+    				</Card.Text>
+				</Card.Body>
+			</Card>
+		)
+	}
 }
-
-export default Goal 
