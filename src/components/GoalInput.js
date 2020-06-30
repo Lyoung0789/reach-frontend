@@ -23,6 +23,11 @@ class GoalInput extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addGoal(this.state)
+        this.setState({
+            title: "",
+            category: "",
+            description: ""
+        })
         
     }
     
