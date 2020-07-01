@@ -39,7 +39,7 @@ class GoalInput extends Component {
                 
                 <Form.Group controlId="exampleForm.ControlInput1">
                     <Form.Label>Title of Your Goal</Form.Label>
-                    <Form.Control type="text" name="title" placeholder="I want to be rich!" />
+                    <Form.Control type="text" name="title" value={this.state.title} />
                 </Form.Group>
                 
 
@@ -53,7 +53,7 @@ class GoalInput extends Component {
 
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Describe Your Goal</Form.Label>
-                    <Form.Control as="textarea" rows="3" name="description"  />
+                    <Form.Control as="textarea" rows="3" name="description" value={this.state.description} />
                 </Form.Group>
 
                 <input type="submit"/>
