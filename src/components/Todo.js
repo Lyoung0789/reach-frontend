@@ -1,11 +1,14 @@
 import React from 'react'
+import {ListGroup} from 'react-bootstrap'
 
 
 const Todo = (props)=>{
 
     // debugger
     return(
-        <div>{props.todo.title}</div>
+        <ListGroup.Item as="li">
+            {props.todo.title}
+        </ListGroup.Item>
     )
 }
 
