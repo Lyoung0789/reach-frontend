@@ -15,16 +15,16 @@ class TodoInput extends Component {
     handleChange = (event) => {
         this.setState({
             title: event.target.value,
-            goal_id: this.props.goal_id
+            
         })
     }
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.addTodo(this.state)
+        this.props.addTodo(this.state, this.props.goal.id)
         this.setState({
             title: "",
-            goal_id: ""
+            
   
         })
 

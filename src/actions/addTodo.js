@@ -1,7 +1,7 @@
-export function addTodo(data){
+export function addTodo(data, goalId){
     
     return(dispatch) => {
-        fetch('http://localhost:3000/api/v1/goals/', {
+        fetch(`http://localhost:3000/api/v1/goals/${goalId}/todos`, {
         headers: {
             'Content-Type': 'application/json', 
             'Accept': 'application/json'

@@ -20,11 +20,9 @@ class GoalsContainer extends Component{
             <div>
                 We in the Goals Container fam
                 <Switch>
-
-                
-                <Route path= '/goals/new' component={GoalInput} />
-                <Route path = '/goals/:id' render={(routerProps)=> <GoalShow {...routerProps} goals={this.props.goals} /> }/>
-                <Route path= '/goals' render={(routerProps)=> <Goals {...routerProps} goals={this.props.goals} /> } />
+                    <Route path= '/goals/new' component={GoalInput} />
+                    <Route path = '/goals/:id' render={(routerProps)=> <GoalShow {...routerProps} goals={this.props.goals} /> }/>
+                    <Route path= '/goals' render={(routerProps)=> <Goals {...routerProps} goals={this.props.goals} /> } />
                 </Switch>
             </div>
         )

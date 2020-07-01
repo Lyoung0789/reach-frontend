@@ -10,7 +10,7 @@ class TodosContainer extends Component {
         return(
             <div>
                 {console.log("We are in the ToDosContainer")}
-                <TodoInput goal_id = {this.props.goal.id}/>
+                <TodoInput goal = {this.props.goal}/>
                 <Todos todos={this.props.goal.todos}/>
             </div>
         )
