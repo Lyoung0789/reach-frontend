@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { addGoal } from '../actions/addGoal'
 
 
+
 class GoalInput extends Component {
 
     category = ['Budget', 'Travel', 'Health', 'Mental Health', 'Spiritual']
@@ -28,7 +29,8 @@ class GoalInput extends Component {
             category: "",
             description: ""
         })
-        
+        this.props.history.push('/goals')
+
     }
     
 

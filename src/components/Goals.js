@@ -1,6 +1,6 @@
 import React from 'react'
 import Goal from './Goal'
-import {  CardColumns} from 'react-bootstrap'
+import {  CardColumns } from 'react-bootstrap'
 
 const Goals = (props) =>{
 
