@@ -3,7 +3,7 @@ import React from 'react'
 
 const Todo = (props)=>{
 
-    debugger
+    // debugger
     return(
         <div>{props.todo.title}</div>
     )

@@ -12,10 +12,10 @@ const GoalShow = (props) => {
         return (
         <div>
             {goal.title} - {goal.description}
-            <p>
-                <TodosContainer todos={goal.todos}/>
+            
+            <TodosContainer todos={goal.todos} goal_id={goal.id}/>
                 
-            </p>
+           
         </div>
         )
     } else {

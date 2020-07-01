@@ -1,4 +1,4 @@
-export function addGoal(data){
+export function addTodo(data){
     
     return(dispatch) => {
         fetch('http://localhost:3000/api/v1/goals/', {
