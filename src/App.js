@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        Reach
+          <h1>Reach App</h1>
         <GoalsContainer />
       </div>
     );

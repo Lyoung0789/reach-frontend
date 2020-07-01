@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
+
 
 
 export default class Goal extends Component {
@@ -16,6 +17,7 @@ export default class Goal extends Component {
                         <Card.Text>
                         {this.props.goal.description}
                         </Card.Text>
+                        <Button variant="primary">Goal Reached!</Button>
                     </Card.Body>
             </Card>
 		)
