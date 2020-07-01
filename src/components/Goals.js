@@ -11,7 +11,7 @@ const Goals = (props) =>{
             My Goals
             
             <CardColumns >
-                {props.goals.map((goal)=> <Goal goal ={goal} key={goal.id} />)}
+                {props.goals.map((goal)=> <Goal goal ={goal} key={goal.id}  />)}
             </CardColumns>
         </div>
     )
