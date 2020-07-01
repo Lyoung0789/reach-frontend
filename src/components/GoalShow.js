@@ -13,7 +13,7 @@ const GoalShow = (props) => {
         <div>
             {goal.title} - {goal.description}
             
-            <TodosContainer todos={goal.todos} goal_id={goal.id}/>
+            <TodosContainer goal={goal} />
                 
            
         </div>

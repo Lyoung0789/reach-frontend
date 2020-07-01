@@ -9,9 +9,9 @@ class TodosContainer extends Component {
     render(){
         return(
             <div>
-                We are in the ToDosContainer
-                <TodoInput goal_id = {this.props.goal_id}/>
-                <Todos todos={this.props.todos}/>
+                {console.log("We are in the ToDosContainer")}
+                <TodoInput goal_id = {this.props.goal.id}/>
+                <Todos todos={this.props.goal.todos}/>
             </div>
         )
     }
