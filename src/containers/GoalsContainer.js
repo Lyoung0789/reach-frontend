@@ -17,7 +17,8 @@ class GoalsContainer extends Component{
     render(){
         // debugger
         return (
-            <div>Goals Container
+            <div>
+                We in the Goals Container fam
                 <Route exact path= '/goals/new' component={GoalInput} />
                 <Route path = '/goals/:id' render={(routerProps)=> <GoalShow {...routerProps} goals={this.props.goals} /> }/>
                 <Route exact path= '/goals' render={(routerProps)=> <Goals {...routerProps} goals={this.props.goals} /> } />
