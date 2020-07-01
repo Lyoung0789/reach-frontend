@@ -3,7 +3,7 @@ import React from 'react'
 
 const GoalShow = (props) => {
    
-    let goal = props.goals.find(element => element.id == props.match.params.id)
+    let goal = props.goals.find(element => element.id === parseInt(props.match.params.id))
    
     
 
