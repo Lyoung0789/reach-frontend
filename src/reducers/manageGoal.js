@@ -15,7 +15,11 @@ export default function manageGoal(state = {
                 ...state, goals:[...state.goals, action.goal]
             }
         
+            
         case 'ADD_TODO':
+            //for this we had to make sure we are returning a whole goal from the back end, this makes it easier for us since todos are attached to goals. 
+            // if this wasnt the case we would have to find the right goal accoridng to the todo then iterate and replace. 
+            // here we have the the goal already. all we need to do is iterate thrpiugh the store and replace with the right action.goal
             return {
                 ...state, goals: state.goals.map(goal => {
                     if (goal.id === action.goal.id){
