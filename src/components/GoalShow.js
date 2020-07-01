@@ -2,10 +2,9 @@ import React from 'react'
 
 
 const GoalShow = (props) => {
-    // console.log(props)
-    // debugger
+   
     let goal = props.goals.find(element => element.id == props.match.params.id)
-    debugger
+   
     
 
     if (goal){
