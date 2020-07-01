@@ -1,4 +1,5 @@
 import React from 'react'
+import TodosContainer from '../containers/TodosContainer'
 
 
 const GoalShow = (props) => {
@@ -12,7 +13,8 @@ const GoalShow = (props) => {
         <div>
             {goal.title} - {goal.description}
             <p>
-                {goal.todos.map(todo => <li>{todo.title}</li>)}
+                <TodosContainer todos={goal.todos}/>
+                
             </p>
         </div>
         )
