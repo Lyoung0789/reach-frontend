@@ -33,7 +33,7 @@ class TodoInput extends Component {
 
     render(){
         return(
-            <Form style={{ width: '50rem' }} onSubmit={event => this.handleSubmit(event)}>
+            <Form style={{ width: '18rem', marginLeft: '17px' }} onSubmit={event => this.handleSubmit(event)}>
                 
                 <Form.Group controlId="exampleForm.ControlInput1">
                     <Form.Label>Add New Todo:</Form.Label>

@@ -12,7 +12,7 @@ export default class GoalsReached extends Component{
             <div>
                 <h3>Reached Goals!</h3>
                 <CardColumns>
-                    {this.props.goals.map(goal => <GoalReached goal={goal}/>)}  
+                    {this.props.goals.map((goal, i) => <GoalReached key={i} goal={goal}/>)}  
                 </CardColumns>
             </div>
 

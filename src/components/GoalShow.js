@@ -1,6 +1,6 @@
 import React from 'react'
 import TodosContainer from '../containers/TodosContainer'
-import {Card} from 'react-bootstrap'
+import {Card, Container, Col, Row} from 'react-bootstrap'
 
 
 const GoalShow = (props) => {
@@ -12,24 +12,27 @@ const GoalShow = (props) => {
     if (goal){
         return (
   
-        <div>
+        <Container fluid>
+            <Row>
+                <Col>
+                    <Card style={{ width: '40rem' }}>              
+                    <Card.Img variant="top" src={goal.image_url} />
+                        <Card.Body>
+                            <Card.Title>{goal.title}</Card.Title>
+                            <Card.Text>
+                            {goal.description}
+                            </Card.Text>
+                                
+                        </Card.Body>
+                    </Card>
+                </Col>
 
-            <Card style={{ width: '30rem' }}>              
-                <Card.Img variant="top" src={goal.image_url} />
-                    <Card.Body>
-                        <Card.Title>{goal.title}</Card.Title>
-                        <Card.Text>
-                        {goal.description}
-                        </Card.Text>
-                            
-                    </Card.Body>
-            </Card>
-
-            
-            <TodosContainer goal={goal} />
-                
-           
-        </div>
+                <Col>
+                    <TodosContainer goal={goal} />
+                </Col>
+                    
+            </Row>
+        </Container>
         )
     } else {
         return (

@@ -1,20 +1,20 @@
 import React, {Component} from 'react'
-import Todos from '../components/Todos'
 import TodoInput from '../components/TodoInput'
+import Todos from '../components/Todos'
+import {Container} from 'react-bootstrap'
 
 class TodosContainer extends Component {
 
-
-
     render(){
         return(
-            <div>
+            <Container>
                 {console.log("We are in the ToDosContainer")}
-                <TodoInput goal = {this.props.goal}/>
+                <TodoInput goal = {this.props.goal}/>     
                 <Todos todos={this.props.goal.todos} goal_id= {this.props.goal.id}/>
-            </div>
+            </Container>
         )
     }
+
 }
 
 export default TodosContainer
