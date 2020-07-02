@@ -1,5 +1,6 @@
 import React from 'react'
 import TodosContainer from '../containers/TodosContainer'
+import {Card} from 'react-bootstrap'
 
 
 const GoalShow = (props) => {
@@ -10,9 +11,20 @@ const GoalShow = (props) => {
 
     if (goal){
         return (
+  
         <div>
-            <h3>{goal.title}</h3>
-            <p>{goal.description}</p>
+
+            <Card style={{ width: '30rem' }}>              
+                <Card.Img variant="top" src={goal.image_url} />
+                    <Card.Body>
+                        <Card.Title>{goal.title}</Card.Title>
+                        <Card.Text>
+                        {goal.description}
+                        </Card.Text>
+                            
+                    </Card.Body>
+            </Card>
+
             
             <TodosContainer goal={goal} />
                 
