@@ -3,6 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 import {editCompletedGoal} from '../actions/editCompletedGoal'
+import GoalReached from '../components/GoalReached'
 
 
 
@@ -33,16 +34,9 @@ class Goal extends Component {
             )
         } else{
             return(
-                <Card border="secondary" bg="success">              
-                    <Card.Img variant="top" src={this.props.goal.image_url} />
-                        <Card.Body>
-                            <Card.Title><Link to={`/goals/${this.props.goal.id}`}>{this.props.goal.title}</Link></Card.Title>
-                            <Card.Text>
-                            {this.props.goal.description}
-                            </Card.Text>
-                            ✔
-                        </Card.Body>
-                </Card>
+                <div>
+                    <GoalReached goal={this.props.goal}/>
+                </div>
             )
             
         }
