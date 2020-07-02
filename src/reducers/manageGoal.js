@@ -41,6 +41,17 @@ export default function manageGoal(state = {
                     }
                 })
             }
+        
+        case 'EDIT_COMPLETED_GOAL':
+            return{
+                ...state, goals: state.goals.map(goal => {
+                    if (goal.id === action.goal.id){
+                        return action.goal
+                    } else {
+                        return goal
+                    }
+                })
+            }
 
         default: 
             return state
