@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 import {editCompletedGoal} from '../actions/editCompletedGoal'
-import GoalReached from '../components/GoalReached'
+
 
 
 
@@ -35,7 +35,7 @@ class Goal extends Component {
         } else{
             return(
                 <div>
-                    <GoalReached goal={this.props.goal}/>
+                    
                 </div>
             )
             

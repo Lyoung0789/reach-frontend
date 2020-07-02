@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
-import Goals from './Goals'
-import { InputGroup } from 'react-bootstrap'
+import GoalReached from './GoalReached'
+import {  CardColumns } from 'react-bootstrap'
 
 export default class GoalsReached extends Component{
     
 
+
     render(){
-        
+        // debugger
         return(
             <div>
-                Reached Goals
-                <Goals goals={this.props.goals.filter(goal => goal.completed === true)} />
+                <h3>Reached Goals!</h3>
+                <CardColumns>
+                    {this.props.goals.map(goal => <GoalReached goal={goal}/>)}  
+                </CardColumns>
             </div>
 
         )
