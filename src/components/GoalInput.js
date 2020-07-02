@@ -37,7 +37,7 @@ class GoalInput extends Component {
     render(){
         // debugger
         return(
-            <Form style={{ width: '50rem' }} onSubmit={event => this.handleSubmit(event)}>
+            <Form style={{ width: '50rem', marginLeft :'auto', marginRight: 'auto' }} onSubmit={event => this.handleSubmit(event)}>
                 
                 <Form.Group controlId="exampleForm.ControlInput1">
                     <Form.Label>Title of Your Goal</Form.Label>

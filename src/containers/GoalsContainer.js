@@ -10,6 +10,8 @@ import GoalsReached from '../components/GoalsReached'
 
 class GoalsContainer extends Component{
 
+   
+
     componentDidMount(){
         this.props.fetchGoals()
     }
@@ -17,7 +19,7 @@ class GoalsContainer extends Component{
     render(){
         // debugger
         return (
-            <div>
+            <div style={{marginLeft :'70px', marginRight: '70px'}}>
                 
                 <Switch>
                     

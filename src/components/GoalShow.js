@@ -11,7 +11,8 @@ const GoalShow = (props) => {
     if (goal){
         return (
         <div>
-            {goal.title} - {goal.description}
+            <h3>{goal.title}</h3>
+            <p>{goal.description}</p>
             
             <TodosContainer goal={goal} />
                 
