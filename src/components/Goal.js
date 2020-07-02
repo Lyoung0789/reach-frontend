@@ -33,7 +33,16 @@ class Goal extends Component {
             )
         } else{
             return(
-                <p></p>
+                <Card border="secondary" bg="success">              
+                    <Card.Img variant="top" src={this.props.goal.image_url} />
+                        <Card.Body>
+                            <Card.Title><Link to={`/goals/${this.props.goal.id}`}>{this.props.goal.title}</Link></Card.Title>
+                            <Card.Text>
+                            {this.props.goal.description}
+                            </Card.Text>
+                            ✔
+                        </Card.Body>
+                </Card>
             )
             
         }
