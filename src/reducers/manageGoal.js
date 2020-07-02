@@ -30,9 +30,8 @@ export default function manageGoal(state = {
                 })
             }
 
-            //fix this
+
         case 'EDIT_TODO': 
-            // debugger
             return{
                 ...state, goals: state.goals.map(goal => {
                     if (goal.id === action.goal.id){

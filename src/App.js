@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GoalsContainer from './containers/GoalsContainer'
+import NavBar from './components/NavBar'
 
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <h1>Reach App</h1>
+        <NavBar />
         <GoalsContainer />
       </div>
     );
