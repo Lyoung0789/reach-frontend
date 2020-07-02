@@ -10,9 +10,9 @@ export default class Todos extends Component{
         return(
             
             <ListGroup className="w-50 p-3" as='ul'>
-                {console.log(this.props.todos)}
+                {console.log(this.props.goal_id)}
                 we re in todos
-                {this.props.todos.map((todo,i) => <Todo todo={todo} key={i}/>)}
+                {this.props.todos.map((todo,i) => <Todo todo={todo} key={i} goal_id={this.props.goal_id}/>)}
             </ListGroup>
         )
     }
