@@ -7,7 +7,7 @@ const GoalReached = (props) =>{
     // debugger
 
     return(
-        <Card  bg="success">              
+        <Card  border="success" bg="light">              
             <Card.Img variant="top" src={props.goal.image_url} />
                 <Card.Body>
                     <Card.Title><Link to={`/goals/${props.goal.id}`}>{props.goal.title}</Link></Card.Title>

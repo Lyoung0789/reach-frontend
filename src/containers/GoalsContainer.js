@@ -21,12 +21,13 @@ class GoalsContainer extends Component{
                 
                 <Switch>
                     
+                    
                     <Route path= '/goals/new' component={GoalInput} />
                     
                     <Route path= '/goals/goals_reached' render={() => <GoalsReached goals={this.props.goals.filter(goal => goal.completed === true)}/>} />
 
                     <Route path = '/goals/:id' render={(routerProps)=> <GoalShow {...routerProps} goals={this.props.goals} /> }/>
-                    <Route path= '/goals' render={(routerProps)=> <Goals {...routerProps} goals={this.props.goals} /> } />
+                    <Route exact path= '/goals' render={(routerProps)=> <Goals {...routerProps} goals={this.props.goals} /> } />
                     
                 </Switch>
             </div>
