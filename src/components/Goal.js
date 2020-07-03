@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 import {editCompletedGoal} from '../actions/editCompletedGoal'
 
@@ -24,11 +24,11 @@ class Goal extends Component {
                 <Card>              
                     <Card.Img variant="top" src={this.props.goal.image_url} />
                         <Card.Body>
-                            <Card.Title><Link to={`/goals/${this.props.goal.id}`}>{this.props.goal.title}</Link></Card.Title>
+                            <Card.Title><NavLink style={{color: 'rgb(0,206,209)'}} to={`/goals/${this.props.goal.id}`}>{this.props.goal.title}</NavLink></Card.Title>
                             <Card.Text>
                             {this.props.goal.description}
                             </Card.Text>
-                            <Button variant="primary" onClick={() => this.handleClick(this.props.goal.id, this.props.goal)}>Goal Reached!</Button>
+                            <Button variant="info" onClick={() => this.handleClick(this.props.goal.id, this.props.goal)}>Goal Reached!</Button>
                         </Card.Body>
                 </Card>
             )

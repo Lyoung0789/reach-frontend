@@ -1,14 +1,14 @@
 import React from 'react'
 import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
-import {NavLink} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
 
 const NavBar = () => {
     return (
-        <Navbar bg="primary" variant="dark" >
+        <Navbar bg="info" variant="dark" >
             <Navbar.Brand>Reach App</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link as={NavLink} to="/goals">Home</Nav.Link>
+                <Nav.Link as={NavLink} exact to="/goals">Home</Nav.Link>
                 <Nav.Link as={NavLink} to="/goals/new" >New Goal</Nav.Link>
                 <Nav.Link  as={NavLink} to="/goals/goals_reached">Reached Goals</Nav.Link>
             </Nav>

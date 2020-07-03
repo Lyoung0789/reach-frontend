@@ -17,7 +17,7 @@ const Todo = (props)=>{
     if(props.todo.completed === false){
         return(
             <ListGroup.Item as="li">
-                {props.todo.title}<Button variant="primary" size ="sm" className="float-right" onClick = {() => handleClick(props.todo, props.goal_id)}>Reached!</Button>
+                {props.todo.title}<Button variant="info" size ="sm" className="float-right" onClick = {() => handleClick(props.todo, props.goal_id)}>Reached!</Button>
             </ListGroup.Item>
         )
             
