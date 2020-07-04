@@ -18,7 +18,7 @@ class SearchBar extends Component{
     }
 
 
-    handleClick = (event) => {
+    handleSubmit = (event) => {
         
         event.preventDefault()
         
@@ -29,9 +29,9 @@ class SearchBar extends Component{
     render(){
         // debugger
         return(
-            <Form inline onSubmit = {event => this.handleClick(event)}>
+            <Form inline onSubmit= {event => this.handleSubmit(event)}>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange = {event => this.handleChange(event)}/>
-                    <Button variant="outline-light" >Search</Button>
+                <Button variant="outline-light" onClick = {event => this.handleSubmit(event)} >Search</Button>
             </Form>
         )
 
