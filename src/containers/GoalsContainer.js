@@ -6,6 +6,7 @@ import GoalInput from '../components/GoalInput'
 import {Route, Switch } from 'react-router-dom'
 import GoalShow from '../components/GoalShow'
 import GoalsReached from '../components/GoalsReached'
+import FindGoals from '../components/FindGoals'
 
 
 class GoalsContainer extends Component{
@@ -27,6 +28,8 @@ class GoalsContainer extends Component{
                     <Route path= '/goals/new' component={GoalInput} />
                     
                     <Route path= '/goals/goals_reached' render={() => <GoalsReached goals={this.props.goals.filter(goal => goal.completed === true)}/>} />
+
+                    <Route path= '/goals/search/:title' render={(routerProps) => <FindGoals {...routerProps} /> } />
 
                     <Route path = '/goals/:id' render={(routerProps)=> <GoalShow {...routerProps} goals={this.props.goals} /> }/>
                     <Route exact path= '/goals' render={(routerProps)=> <Goals {...routerProps} goals={this.props.goals} /> } />

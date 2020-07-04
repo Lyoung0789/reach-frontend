@@ -21,4 +21,3 @@ const Goals = (props) =>{
 
 export default Goals 
 
-// style={{display: 'flex', flexDirection: 'row'}}
