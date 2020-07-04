@@ -53,13 +53,7 @@ export default function manageGoal(state = {
                 })
             }
         
-        // case 'SEARCH':
-        //     debugger
-        //     const array = state.goals.filter(goal => goal.title.toLowerCase().includes(action.value.toLowerCase()))
 
-        //     return{
-        //         ...state, goals: array    
-        //     }
 
         case 'FILTER':
             const array = state.goals.filter(goal => goal.category.includes(action.value))
