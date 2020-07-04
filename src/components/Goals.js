@@ -1,8 +1,8 @@
 import React from 'react'
 import Goal from './Goal'
 import {  CardColumns } from 'react-bootstrap'
-import CategoryFilter from './CategoryFilter'
-import SearchBar from './SearchBar'
+// import CategoryFilter from './CategoryFilter'
+
 
 
 const Goals = (props) =>{

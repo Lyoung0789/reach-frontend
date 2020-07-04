@@ -7,7 +7,7 @@ import {Route, Switch } from 'react-router-dom'
 import GoalShow from '../components/GoalShow'
 import GoalsReached from '../components/GoalsReached'
 import FindGoals from '../components/FindGoals'
-import CategoryFilter from '../components/CategoryFilter'
+// import CategoryFilter from '../components/CategoryFilter'
 
 
 class GoalsContainer extends Component{

@@ -1,7 +1,7 @@
 import React, {Component } from 'react'
 import {FormControl, Form, Button} from 'react-bootstrap'
 import { connect } from 'react-redux'
-import {searchGoals} from '../actions/searchGoals'
+
 
 // import Welcome  from './Welcome'
 
@@ -40,4 +40,4 @@ class SearchBar extends Component{
 
 const mapStateToProps = ({goals}) => ({goals})
 
-export default connect(mapStateToProps,{searchGoals})(SearchBar)
+export default connect(mapStateToProps)(SearchBar)
