@@ -7,7 +7,7 @@ import { addGoal } from '../actions/addGoal'
 
 class GoalInput extends Component {
 
-    category = ['Budget', 'Travel', 'Health', 'Mental Health', 'Spiritual']
+    category = ['Budget', 'Travel', 'Health', 'Mental Health', 'Spiritual', 'Cooking', 'Other']
 
     state={
         title: "",
@@ -46,7 +46,7 @@ class GoalInput extends Component {
                 
 
                 <Form.Group controlId="exampleForm.ControlSelect1">
-                    <Form.Label>Example select</Form.Label>
+                    <Form.Label>Select Category</Form.Label>
                     <Form.Control as="select" name="category" onChange={event => this.handleChange(event)}>
                         {this.category.map((category, i)=> <option key={i}>{category}</option>)}
                     </Form.Control>
