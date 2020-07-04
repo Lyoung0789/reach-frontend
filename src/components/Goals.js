@@ -2,6 +2,7 @@ import React from 'react'
 import Goal from './Goal'
 import {  CardColumns } from 'react-bootstrap'
 import CategoryFilter from './CategoryFilter'
+import SearchBar from './SearchBar'
 
 
 const Goals = (props) =>{
@@ -11,9 +12,10 @@ const Goals = (props) =>{
     
     return(
         
-        <div >
+        <div>
             <h3>Goals to Reach!</h3>
-            <CategoryFilter />
+            {/* <CategoryFilter /> */}
+            
             <CardColumns >
                 {props.goals.map((goal)=> <Goal goal ={goal} key={goal.id}  />)}
             </CardColumns>

@@ -1,11 +1,13 @@
 import React from 'react'
-import {Navbar, Nav} from 'react-bootstrap'
+import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
 import { NavLink} from 'react-router-dom'
 import SearchBar from './SearchBar'
 
 
-const NavBar = () => {
+const NavBar = (props) => {
+    // debugger
     return (
+        
         <Navbar bg="info" variant="dark" >
             <Navbar.Brand>Reach App</Navbar.Brand>
             <Nav className="mr-auto">
@@ -14,7 +16,7 @@ const NavBar = () => {
                 <Nav.Link  as={NavLink} to="/goals/goals_reached">Reached Goals</Nav.Link>
             </Nav>
             
-            <SearchBar />
+            <SearchBar routerProps={props}/>
         </Navbar>
     )
 }
