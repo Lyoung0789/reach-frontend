@@ -7,6 +7,7 @@ import {editCompletedGoal} from '../actions/editCompletedGoal'
 
 
 
+
 class Goal extends Component {
 
 
