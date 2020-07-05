@@ -1,3 +1,8 @@
+# README
+This is the frontend portion of my Reach app. The backend can be found here: [Reach Backend](https://github.com/Lyoung0789/reach-backend.git)
+Reach is an application where users can keep track of their goals. Users are also able to create and maintain checklists so that they are able to Reach their goals. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -67,5 +72,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### FRONTEND
-This is the front end portion of Reach react/redux project
