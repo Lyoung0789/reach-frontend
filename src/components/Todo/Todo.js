@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {editTodo} from '../actions/editTodo'
+import {editTodo} from '../../actions/editTodo'
 import {ListGroup, Button} from 'react-bootstrap'
 
 

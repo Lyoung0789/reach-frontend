@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Form } from 'react-bootstrap'
 import {connect} from 'react-redux'
-import {addTodo} from '../actions/addTodo'
+import {addTodo} from '../../actions/addTodo'
 
 class TodoInput extends Component {
 

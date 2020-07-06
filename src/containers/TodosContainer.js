@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import TodoInput from '../components/TodoInput'
-import Todos from '../components/Todos'
+import TodoInput from '../components/Todo/TodoInput'
+import Todos from '../components/Todo/Todos'
 import {Container} from 'react-bootstrap'
 
 class TodosContainer extends Component {
