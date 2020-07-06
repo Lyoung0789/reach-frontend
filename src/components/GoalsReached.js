@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import GoalReached from './GoalReached'
+import GoalReached from './Goal/GoalReached'
 import {  CardColumns } from 'react-bootstrap'
 
 export default class GoalsReached extends Component{

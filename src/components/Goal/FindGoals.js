@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Goals from '../Goals'
+import Goals from './Goals'
 
 class FindGoals extends Component{
 

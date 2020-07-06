@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Form } from 'react-bootstrap'
 import { connect } from 'react-redux'
-import { addGoal } from '../actions/addGoal'
+import { addGoal } from '../../actions/addGoal'
 
 
 

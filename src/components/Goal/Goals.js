@@ -1,5 +1,5 @@
 import React from 'react'
-import Goal from './Goal/Goal'
+import Goal from './Goal'
 import {  CardColumns } from 'react-bootstrap'
 // import CategoryFilter from './CategoryFilter'
 
