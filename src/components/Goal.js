@@ -5,13 +5,8 @@ import { connect } from 'react-redux'
 import {editCompletedGoal} from '../actions/editCompletedGoal'
 
 
-
-
-
 class Goal extends Component {
 
-
-   
 
     handleClick = (goalId, goal) => {
         goal.completed = true
