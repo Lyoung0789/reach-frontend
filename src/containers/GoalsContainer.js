@@ -6,7 +6,7 @@ import GoalInput from '../components/GoalInput'
 import {Route, Switch } from 'react-router-dom'
 import GoalShow from '../components/GoalShow'
 import GoalsReached from '../components/GoalsReached'
-import FindGoals from '../components/FindGoals'
+import FindGoals from '../components/Goal/FindGoals'
 // import CategoryFilter from '../components/CategoryFilter'
 
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
-import {editCompletedGoal} from '../actions/editCompletedGoal'
+import {editCompletedGoal} from '../../actions/editCompletedGoal'
 
 
 class Goal extends Component {
