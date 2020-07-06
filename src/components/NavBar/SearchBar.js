@@ -21,6 +21,9 @@ class SearchBar extends Component{
     handleSubmit = (event) => {
         
         event.preventDefault()
+        this.setState({
+            search:""
+        })
         
         this.props.routerProps.history.push(`/goals/search/${this.state.search}`)
     }
@@ -30,7 +33,7 @@ class SearchBar extends Component{
         
         return(
             <Form inline onSubmit= {event => this.handleSubmit(event)}>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange = {event => this.handleChange(event)}/>
+                <FormControl value={this.state.search} type="text" placeholder="Search" className="mr-sm-2" onChange = {event => this.handleChange(event)}/>
                 <Button variant="outline-light" onClick = {event => this.handleSubmit(event)} >Search</Button>
             </Form>
         )
