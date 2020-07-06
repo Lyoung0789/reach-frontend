@@ -1,5 +1,5 @@
 import React from 'react'
-import TodosContainer from '../containers/TodosContainer'
+import TodosContainer from '../../containers/TodosContainer'
 import {Card, Container, Col, Row} from 'react-bootstrap'
 
 
