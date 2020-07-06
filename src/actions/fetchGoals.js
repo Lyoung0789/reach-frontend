@@ -10,6 +10,7 @@ export function fetchGoals(){
         type: "FETCH_GOALS",
         goals
         }))
+        .catch(alert)
     }
     
 }
