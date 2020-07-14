@@ -7,7 +7,7 @@ export function addTodo(data, goalId){
             'Accept': 'application/json'
         },    
         method: "POST", 
-        //must send it over as a string, hence we stringify
+        
         body: JSON.stringify(data)
         })
         .then(response => response.json())

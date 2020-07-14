@@ -1,7 +1,7 @@
 export function categoryFilter(value){
-    debugger
+    // debugger
     return {
-        type: 'FILTER',
-        value: value.category
+        type: "FILTER", 
+        payload: value
     }
 }

@@ -1,4 +1,5 @@
 export default function manageGoal(state = {
+    filterText: '',
     goals: []
 }, action){
     // debugger
@@ -55,12 +56,12 @@ export default function manageGoal(state = {
         
 
 
-        case 'FILTER':
-            const array = state.goals.filter(goal => goal.category.includes(action.value))
-            return{
-                ...state, goals: array
-            }
 
+        case 'FILTER':
+            debugger
+            return{
+                ...state, filterText: action.payload.category
+            }
         default: 
             return state
 

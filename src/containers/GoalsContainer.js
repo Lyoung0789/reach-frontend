@@ -44,6 +44,19 @@ class GoalsContainer extends Component{
 
 
 
-const mapStateToProps = ({goals}) => ({goals})
+// const mapStateToProps = ({goals}) => ({goals})
+const mapStateToProps = (state) => {
+    // debugger
+    if(state.filterText !== "" && state.filterText !== "All"){
+        return {
+            goals: state.goals.filter(goal => goal.category.includes(state.filterText))
+        }
+    } else {
+        return{
+            goals: state.goals
+        }
+    } 
+    
+}
 
 export default connect(mapStateToProps, {fetchGoals})(GoalsContainer)

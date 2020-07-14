@@ -4,14 +4,14 @@ import {connect} from 'react-redux'
 
 class CategoryFilter extends Component {
 
-    category = ['Budget', 'Travel', 'Health', 'Mental Health', 'Spiritual']
+    category = ['All', 'Budget', 'Travel', 'Health', 'Mental Health', 'Spiritual', "Cooking", "Other" ]
 
     state ={
-        category : ""
+        category : "All"
     }
 
     handleSubmit = event => {
-        debugger
+        // debugger
         event.preventDefault()
         // console.log(this.props.state)
         this.props.categoryFilter(this.state)
@@ -32,7 +32,7 @@ class CategoryFilter extends Component {
         return(
             <form onSubmit = {event => this.handleSubmit(event)}> 
                 <select name="category" onChange = {event => this.handleChange(event)}>
-                    {this.category.map(cat => <option value={this.state.categoy}>{`${cat}`}</option>)}
+                    {this.category.map((cat, i) => <option key={i}value={this.state.categoy}>{`${cat}`}</option>)}
                 </select>
                 <input type="submit" />
             </form>
@@ -40,6 +40,6 @@ class CategoryFilter extends Component {
     }
 }
 
-const mapStatetoProps = ({goals})=> ({goals})
+// const mapStatetoProps = ({goals})=> ({goals})
 
-export default connect(mapStatetoProps, {categoryFilter})(CategoryFilter)
+export default connect(null, {categoryFilter})(CategoryFilter)

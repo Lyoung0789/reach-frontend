@@ -11,7 +11,7 @@ class GoalInput extends Component {
 
     state={
         title: "",
-        category: "",
+        category: "Budget",
         description: "",
     }
 
@@ -47,7 +47,7 @@ class GoalInput extends Component {
 
                 <Form.Group controlId="exampleForm.ControlSelect1">
                     <Form.Label>Select Category</Form.Label>
-                    <Form.Control as="select" name="category" onChange={event => this.handleChange(event)}>
+                    <Form.Control as="select" name="category" onChange={event => this.handleChange(event)} value={this.state.category}>
                         {this.category.map((category, i)=> <option key={i}>{category}</option>)}
                     </Form.Control>
                 </Form.Group>
