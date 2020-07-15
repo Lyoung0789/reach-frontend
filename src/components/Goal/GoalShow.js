@@ -36,7 +36,7 @@ const GoalShow = (props) => {
         )
     } else {
         return (
-            null
+            <div>Goal was not found. </div>
         )
     }
     

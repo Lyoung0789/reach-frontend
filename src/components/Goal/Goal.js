@@ -8,6 +8,8 @@ import {editCompletedGoal} from '../../actions/editCompletedGoal'
 class Goal extends Component {
 
 
+   
+
     handleClick = (goalId, goal) => {
         goal.completed = true
         this.props.editCompletedGoal(goalId, goal)
@@ -25,6 +27,7 @@ class Goal extends Component {
                             {this.props.goal.description}
                             </Card.Text>
                             <Button variant="info" onClick={() => this.handleClick(this.props.goal.id, this.props.goal)}>Goal Reached!</Button>
+            
                         </Card.Body>
                 </Card>
             )

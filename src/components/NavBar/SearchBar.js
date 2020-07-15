@@ -34,7 +34,7 @@ class SearchBar extends Component{
         return(
             <Form inline onSubmit= {event => this.handleSubmit(event)}>
                 <FormControl value={this.state.search} type="text" placeholder="Search" className="mr-sm-2" onChange = {event => this.handleChange(event)}/>
-                <Button variant="outline-light" onClick = {event => this.handleSubmit(event)} >Search</Button>
+                <Button variant="outline-light" onSubmit = {event => this.handleSubmit(event)} >Search</Button>
             </Form>
         )
 
